@@ -1,5 +1,7 @@
 # containerized-transcription-api
 
+[![Docker](https://github.com/buildberg/containerized-transcription-api/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/buildberg/containerized-transcription-api/actions/workflows/docker-publish.yml)
+
 ![](screenshot.png)
 ```mermaid
 graph LR
