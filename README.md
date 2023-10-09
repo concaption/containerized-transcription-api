@@ -3,31 +3,13 @@
 
 ```mermaid
 graph LR
-  setup[make setup]
-  setup -->|1. Make script executable| setup.sh[setup.sh]
-  setup -->|2. Run script| setup.sh
-
-  install[make install]
-  install -->|1. Upgrade pip| pip[pip]
-  install -->|2. Install requirements| requirements[requirements.txt]
-
-  format[make format]
-  format -->|Format all code| black[Black]
-
-  lint[make lint]
-  lint -->|Find and lint .py files| pylint[Pylint]
-
-  precommit[make precommit]
-  precommit -->|1. Install pre-commit hooks| pre-commit-install[pre-commit install]
-  precommit -->|2. Run hooks on all files| pre-commit-run[pre-commit run]
-
-  refactor[make refactor]
-  refactor --> format
-  refactor --> precommit
-  refactor --> lint
-
-  push[make push]
-  push -->|1. Add changes| git-add[git add]
-  push -->|2. Commit changes| git-commit[git commit]
-  push -->|3. Push to repository| git-push[git push]
+    setup[setup] -- "chmod +x ./setup.sh && ./setup.sh" --> install[install]
+    install -- "pip install --upgrade pip && pip install -r requirements.txt" --> format[format]
+    format -- "black ." --> lint[lint]
+    lint -- 'find src -type f -name "*.py" -print0 | xargs -0 pylint' --> precommit[precommit]
+    precommit -- "pre-commit install & pre-commit run --all-files" --> refactor[refactor]
+    refactor -- "format precommit lint" --> push[push]
+    push["push"] -- 'git add . && git commit -m $(m) && git push' --> docker[docker]
+    docker -- "docker-compose up -d --build" --> run[run]
+    run -- "python src/main.py" --> end[End]
 ```
