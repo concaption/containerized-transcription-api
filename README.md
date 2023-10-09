@@ -37,8 +37,4 @@ graph LR
   run[make run]
   run -->|1. Execute main script| main-script[python src/main.py]
 
-  refactor --> push
-  push --> docker
-  docker --> run
-
 ```
