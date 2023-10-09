@@ -9,7 +9,7 @@ This project sets up a robust web application using FastAPI. It integrates the o
 * **FastAPI Backend:** A high-performance, easy-to-learn backend.
 * **Whisper AI Integration:** Cutting-edge STT transcription.
 * **Dockerized:** Simplified deployment, scalability, and management.
-### Why this project"
+### Why this project?
 Whether you want to automate your transcription tasks, enhance accessibility for your content, or explore the world of AI-powered applications, this project has you covered.
 ### Installation
 1. Clone the repository
