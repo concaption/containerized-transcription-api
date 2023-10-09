@@ -1,6 +1,6 @@
 # containerized-transcription-api
 
-
+![](screenshot.png)
 ```mermaid
 graph LR
   setup[make setup]
