@@ -34,7 +34,6 @@ Convert Audio to Text
 ```bash
 POST /whisper
 ```
-Body Params: **audio_file: file**
 
 ```mermaid
 graph LR
