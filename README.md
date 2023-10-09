@@ -1,4 +1,4 @@
-# containerized-transcription-api
+# Containerized Transcription API using Whisper Model and FastAPI
 
 [![Docker](https://github.com/buildberg/containerized-transcription-api/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/buildberg/containerized-transcription-api/actions/workflows/docker-publish.yml)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
