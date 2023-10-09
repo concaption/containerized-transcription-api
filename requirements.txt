@@ -6,8 +6,9 @@ pylint==2.17.5
 nbval==0.10.0
 
 fastapi==0.78.0
-uvicorn[standard]
-aiofiles
-python-multipart
+uvicorn[standard]==0.23.2
+aiofiles==23.2.1
+python-multipart==0.0.6
 torch
 openai-whisper
+pre-commit

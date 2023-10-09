@@ -2,15 +2,17 @@
 sa
 """
 
-from fastapi import FastAPI, File, UploadFile, HTTPException
-from typing import List
-from fastapi.responses import JSONResponse, RedirectResponse
-import whisper
-import torch
 from tempfile import NamedTemporaryFile
+from typing import List
 
+import torch
+import whisper
+from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi.responses import JSONResponse, RedirectResponse
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
+model = whisper.load_model("base", device=DEVICE)
 
 app = FastAPI()
+
+print("   samda, asda")
