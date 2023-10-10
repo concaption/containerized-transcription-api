@@ -1,10 +1,14 @@
 # Containerized Transcription API using Whisper Model and FastAPI
-
+<div align="center">
+  
 [![Docker](https://github.com/buildberg/containerized-transcription-api/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/buildberg/containerized-transcription-api/actions/workflows/docker-publish.yml)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
 [![GitHub Forks](https://img.shields.io/github/forks/buildberg/containerized-transcription-api.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/buildberg/containerized-transcription-api/fork)
 [![GitHub Issues](https://img.shields.io/github/issues/buildberg/containerized-transcription-api.svg?style=flat&label=Issues&maxAge=2592000)](https://github.com/buildberg/containerized-transcription-api/issues)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&label=Contributions&colorA=red&colorB=black	)](#)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/concaption/containerized-transcription-api)
+</div>
 
 ![](screenshot.png)
 ### Overview
